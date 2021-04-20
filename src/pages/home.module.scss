@@ -1,1 +1,54 @@
-// TODO
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 2rem
+}
+
+.posts {
+  max-width: 700px;
+  margin: 2rem auto 0;
+
+  a {
+    display: block;
+    & + a {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+    }
+    strong {
+      display: block;
+      color: var(--gray-100);
+      font-size: 1.8rem;
+      margin-top: 1rem;
+      line-height: 2rem;
+      transition: color .2s;
+    }
+    p {
+      color: var(--gray-300);
+      margin: 1.5rem 0;
+    }
+    .info {
+      color: var(--gray-300);
+      span {
+        font-size: 1rem;
+        svg {
+          margin-right: 0.5rem;
+        }
+        time {
+          text-transform: 'capitalize';
+        }
+        & + span {
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+.more {
+  margin: 2rem 0;
+  background: none;
+  border: none;
+  color: var(--pink-500);
+  font-weight: 600;
+  font-size: 1rem;
+
+}
